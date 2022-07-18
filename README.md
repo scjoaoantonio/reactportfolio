@@ -8,5 +8,5 @@
 ### `npm start`
 
 ## Portfólio antigo (HTML, CSS): 
-- https://github.com/scjoaoantonio/basicportfolio
-- https://scjoaoantonio.github.io/basicportfolio/
+- https://github.com/scjoaoantonio/portfolio
+- https://scjoaoantonio.github.io/portfolio/
