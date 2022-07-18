@@ -1,0 +1,53 @@
+.logo img{
+  color: whitesmoke;
+  width: 10;
+  float: left;
+}
+.menu{
+    height: 60px;
+    background-color: #252323;
+    color: whitesmoke;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: rgb(130, 205, 255);
+    border-bottom-style: solid;
+    display: block;
+    z-index: 1;
+    margin: auto;
+    padding: 18px 80px 18px 90px;
+  }
+.menu ul{
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+
+.menu li{
+    list-style: none;
+    margin-right: 35px;    
+  }
+.redes-sociais img{
+    width: 26px;
+    
+  }
+.redes-sociais a{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  }
+
+.redes-sociais a{
+  transition: all 0.4s ease-in-out;
+  box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.redes-sociais a:hover {
+  transform: translateY(-3px);
+  /* box-shadow: 1px 2px 15px rgba(0, 255, 255, 0.4);
+  box-shadow: 1px 2px 10px aqua; */
+
+}
