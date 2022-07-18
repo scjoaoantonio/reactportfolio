@@ -7,6 +7,6 @@
 
 ### `npm start`
 
-Portfólio antigo (HTML, CSS): 
+## Portfólio antigo (HTML, CSS): 
 - https://github.com/scjoaoantonio/basicportfolio
 - https://scjoaoantonio.github.io/basicportfolio/
