@@ -9,6 +9,8 @@ import C from '../../img/icons/letter-c.png'
 import PYTHON from '../../img/icons/python.png'
 import REACT from '../../img/icons/physics.png'
 import PHOTOSHOP from '../../img/icons/photoshop.png'
+import CANVA from '../../img/icons/canva.png'
+
 
 
 export const Sobre = () =>{
@@ -23,13 +25,13 @@ export const Sobre = () =>{
                             <li><img className='lista-icon' src={CSS} alt="" />CSS3</li>
                         </ul>
                     </div>
-                    <div className="about-item">
+                    {/*<div className="about-item">
                         <h3>Back-end</h3>
                         <ul>
                             <li></li>
                             <li></li>
                         </ul>
-                    </div>
+                    </div>*/}
                     <div className="about-item">
                         <h3>Frameworks</h3>
                         <ul>
@@ -49,6 +51,8 @@ export const Sobre = () =>{
                         <ul>
                             <li><img className='lista-icon' src={PHOTOSHOP} alt="" />Photoshop</li>
                             <li><img className='lista-icon' src={FIGMA} alt="" />Figma</li>
+                            <li><img className='lista-icon' src={CANVA} alt="" />Canva</li>
+
                         </ul>
                     </div>  
             </div>
