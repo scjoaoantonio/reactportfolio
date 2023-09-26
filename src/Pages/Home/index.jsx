@@ -1,4 +1,5 @@
 import Foto from '../../img/others/eusite.JPG'
+import Foto2 from '../../img/others/palestra2.jpeg'
 import './index.css'
 import '../../global.css'
 
