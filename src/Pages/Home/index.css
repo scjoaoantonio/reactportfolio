@@ -7,82 +7,86 @@
     columns: 2;
     align-items: center;
     justify-content: space-around;
-    
-  }
-  .container1{
+}
+
+.container1 {
     display: flex;
     align-items: center;
     flex-direction: column;
-    float: left;
-  }
-  .foto{
-    height: 100%;
-    max-width: auto;
+    float: none; /* Remova o float para dispositivos móveis */
+    width: 100%;
+}
+
+.foto {
+    height: auto; /* Ajuste a altura automaticamente */
+    max-width: 100%; /* Ajuste a largura automaticamente */
     border-radius: 20%;
     box-shadow: 1px 2px 15px rgba(0, 255, 255, 0.2);
     margin-bottom: 20px;
-  }
-  .site-title{
+}
+
+.site-title {
     color: whitesmoke;
     text-align: center;
     font-size: 2.5em;
-    font-family:'Rubik', sans-serif;
-  }
-  
-  .site-subtitle{
-    color:whitesmoke;
+    font-family: 'Rubik', sans-serif;
+}
+
+.site-subtitle {
+    color: whitesmoke;
     text-align: center;
     font-size: 1em;
-    font-family: 'Sofia Sans','Indie Flower', cursive;
-  }
-  .container2{
-    float: right;
-    width: 50%;
-  }
-  .container2 h2{
+    font-family: 'Sofia Sans', 'Indie Flower', cursive;
+}
+
+.container2 {
+    float: none; /* Remova o float para dispositivos móveis */
+    width: 100%;
+}
+
+.container2 h2 {
     font-family: 'Rubik', sans-serif;
     color: whitesmoke;
     margin-bottom: 1em;
-    font-size: 50px;
+    font-size: 2em; /* Reduzi o tamanho do título para dispositivos móveis */
     text-decoration: underline;
     text-decoration-color: rgb(130, 205, 255);
-  }
-  .site-apresentation{
-    color:whitesmoke;
+}
+
+.site-apresentation {
+    color: whitesmoke;
     text-align: center;
     font-size: 1em;
-    font-family: 'Sofia Sans','Indie Flower', 'cursive';
-  }
-  .site-apresentation b{
+    font-family: 'Sofia Sans', 'Indie Flower', 'cursive';
+}
+
+.site-apresentation b {
     font-weight: bolder;
     font-size: 1.1em;
     color: rgb(130, 205, 255);
-  }
-  .space{
-    color:whitesmoke;
+}
+
+.space {
+    color: whitesmoke;
     text-align: center;
     font-size: 1.5em;
-    font-family: 'Source Code Pro','Sofia Sans','Indie Flower','cursive';
-  }
+    font-family: 'Source Code Pro', 'Sofia Sans', 'Indie Flower', 'cursive';
+}
 
-  @media screen and (max-width: 768px) {
+/* Estilos para telas menores que 768px (celulares) */
+@media screen and (max-width: 768px) {
     .home {
-        flex-direction: column; /* Altera a direção da flexbox para uma coluna */
-        text-align: center; /* Centraliza o conteúdo */
-        padding: 2%; /* Reduz o espaçamento */
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 20px;
     }
-
-    .container1 {
-        float: none; /* Remove o float para centralizar */
-        width: 100%;
-    }
-
-    .container2 {
-        float: none; /* Remove o float para centralizar */
-        width: 100%;
-    }
-
     .foto {
-        max-width: 50%; /* Reduz o tamanho da imagem */
+        max-width: 100%; /* Ajuste a largura da imagem */
+    }
+    .container2 h2 {
+        display: none;
     }
 }

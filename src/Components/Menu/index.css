@@ -51,3 +51,20 @@
   box-shadow: 1px 2px 10px aqua; */
 
 }
+/* Estilos para o menu responsivo */
+@media (max-width: 768px) {
+  .menu {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+  .menu li {
+    margin: 0 20px 0 20px;
+    list-style: none;
+  }
+  .logo {
+    display: none;
+  }
+}

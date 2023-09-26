@@ -12,13 +12,13 @@
     grid-template-columns: repeat(3, 260px); 
     align-content: center;
     justify-content: center;
-    height: auto; /* altura auto para acomodar o conteúdo */
   }
 }
 
 .portfolio .grid {
   display: grid;
   gap: 2em;
+  margin-bottom: 2em; /* Aumenta a margem inferior para criar espaço na parte inferior */
 }
 
 .portfolio h2 {
@@ -30,10 +30,11 @@
 }
 
 .works {
-  height: auto; /* altura auto para acomodar o conteúdo */
+  min-height: auto; /* Altera para altura mínima em vez de altura auto */
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 2em; /* Adiciona um espaçamento na parte inferior do .works */
 }
 
 .works h2 {

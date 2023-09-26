@@ -13,7 +13,7 @@ export const Home = () =>{
                     <h1 className="site-subtitle">Estudante de Ciência da Computação</h1>
                 </div>
                 <div className='container2'>
-                    <h2>Sobre mim</h2>
+                    <h2>About me</h2>
                     <p className='site-apresentation'>
                         Sou <b>João Antônio</b>, faço <b>Ciência da Computação</b> na Universidade Federal de São João del Rei e estudo <b>Desenvolvimento Web</b>  desde 2020.
                         <div className='space'>*</div>
