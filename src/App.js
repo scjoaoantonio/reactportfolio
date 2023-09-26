@@ -1,6 +1,6 @@
 import { Menu } from "./Components/Menu";
 import { Home } from "./Pages/Home";
-import { Sobre } from "./Pages/Sobre";
+import { Skills } from "./Pages/Skills";
 import { Works } from "./Pages/Works";
 
 
@@ -9,7 +9,7 @@ function App() {
     <>
     <Menu/>
     <Home/>
-    <Sobre/>
+    <Skills/>
     <Works/>
     </>
   );

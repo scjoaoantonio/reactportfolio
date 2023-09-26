@@ -3,6 +3,10 @@ import '../../global.css';
 
 import HTML from '../../img/icons/html-5.png'
 import CSS from '../../img/icons/css-3.png'
+import FLUTTER from '../../img/icons/flutter.png'
+import WORDPRESS from '../../img/icons/wordpress.png'
+
+
 import FIGMA from '../../img/icons/figma.png'
 import GIT from '../../img/icons/git.png'
 import C from '../../img/icons/letter-c.png'
@@ -13,7 +17,7 @@ import CANVA from '../../img/icons/canva.png'
 
 
 
-export const Sobre = () =>{
+export const Skills = () =>{
     return(
         <section className='sobre'>
             <h2>Skills</h2>
@@ -23,6 +27,10 @@ export const Sobre = () =>{
                         <ul>
                             <li><img className='lista-icon' src={HTML} alt="" />HTML5</li>
                             <li><img className='lista-icon' src={CSS} alt="" />CSS3</li>
+                            <li><img className='lista-icon' src={FLUTTER} alt="" />Flutter</li>
+                            <li><img className='lista-icon' src={WORDPRESS} alt="" />Wordpress</li>
+
+
                         </ul>
                     </div>
                     {/*<div className="about-item">
