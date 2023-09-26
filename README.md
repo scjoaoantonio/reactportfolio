@@ -1,5 +1,3 @@
-(NÃO FINALIZADO)
-
 # Portfólio - João Antônio
 
 [🔗 Clique aqui para acessar](https://scjoaoantonio.vercel.app)
