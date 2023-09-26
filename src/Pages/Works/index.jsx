@@ -67,6 +67,7 @@ export const Works = () =>{
 */}
             </div>
         </div>
+        <footer className='footer'></footer>
     </section>
     );
 };
