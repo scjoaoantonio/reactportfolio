@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 import "../../global.css";
 
-export const Works: React.FC = () => {
+export const Works = () => {
   return (
     <section className="works">
       <h2>Works</h2>
@@ -22,9 +22,9 @@ export const Works: React.FC = () => {
                 </a>
               </div>
               <div className="contente">
-                <span className="titlee">
+                <h3 className="titlee">
                   Site Milhas Gerais - Projeto de extensão UFSJ (2023)
-                </span>
+                </h3>
               </div>
             </div>
           </div>
@@ -43,7 +43,7 @@ export const Works: React.FC = () => {
                 </a>
               </div>
               <div className="contente">
-                <span className="titlee">Site Movimento Negro SJDR (2023)</span>
+                <h3 className="titlee">Site Movimento Negro SJDR (2023)</h3>
               </div>
             </div>
           </div>
@@ -62,42 +62,10 @@ export const Works: React.FC = () => {
                 </a>
               </div>
               <div className="contente">
-                <span className="titlee">
-                  Site de piadas e trocadilhos (2019)
-                </span>
+                <h3 className="titlee">Site de piadas e trocadilhos (2019)</h3>
               </div>
             </div>
           </div>
-
-          {/* 
-          <div className="flip-card">
-            <div className="card">
-              <figure className="card-front">
-                <a 
-                  target={'_blank'} 
-                  href="https://www.youtube.com/user/NotsuruMine/about"
-                  aria-label="View the YouTube channel"
-                >
-                  <img className="img-portfolio" src={Canal} alt="" />
-                </a>
-              </figure>
-            </div>
-          </div>
-
-          <div className="flip-card">
-            <div className="card">
-              <figure className="card-front">
-                <a 
-                  target={'_blank'} 
-                  href="https://scjoaoantonio.github.io/drogariasaolucasitauna/"
-                  aria-label="View the Farmacia website"
-                >
-                  <img className="img-portfolio" src={Farmacia} alt="" />
-                </a>
-              </figure>
-            </div>
-          </div>
-          */}
         </div>
       </div>
       <footer className="footer"></footer>

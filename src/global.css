@@ -6,8 +6,8 @@
 }
 body {
   background-color: #252323;
-  background-size: auto 100vh; 
-  font-family: 'Source Code Pro', monospace;
+  background-size: auto 100vh;
+  font-family: "Source Code Pro", monospace;
   height: 100vh;
   font-size: 12px;
 }
@@ -31,12 +31,9 @@ body {
 /* breakpoint */
 @media (min-width: 1200px) {
   body {
-   
     font-size: 20px;
   }
 }
-
-
 
 @media (min-width: 1200px) {
   .container {
@@ -49,14 +46,10 @@ body {
 .sobre h2,
 .contato h2,
 .portfolio h2 {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   color: rgb(163, 218, 255);
-  margin-bottom: 1em;
   font-size: 2em;
 }
-
-
-
 
 /* soft reset do css */
 * {
@@ -67,8 +60,8 @@ body {
 body {
   /*background-image: url(https://i.pinimg.com/originals/05/7e/3b/057e3bd5a18feb378dc2f6c208e253c1.jpg);*/
   background-color: #252323;
-  background-size: auto 100vh; 
-  font-family: 'Source Code Pro', monospace;
+  background-size: auto 100vh;
+  font-family: "Source Code Pro", monospace;
   height: 100vh;
   font-size: 12px;
 }
@@ -91,17 +84,26 @@ body {
 /* breakpoint */
 @media (min-width: 1200px) {
   body {
-   
     font-size: 20px;
   }
 }
 
-
-
-.container2{
+.container2 {
   text-align: center;
 }
 
+.APP {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
 
-
-
+.APP hr {
+  width: 40%;
+  margin: 60px 0;
+  color: #252323;
+  border: 0px black;
+}

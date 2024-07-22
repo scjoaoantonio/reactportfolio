@@ -14,7 +14,7 @@ import REACT from "../../img/icons/physics.png";
 import PHOTOSHOP from "../../img/icons/photoshop.png";
 import CANVA from "../../img/icons/canva.png";
 
-export const Skills: React.FC = () => {
+export const Skills = () => {
   return (
     <section className="sobre">
       <h2>Skills</h2>

@@ -3,7 +3,7 @@ import Foto from "../../img/others/eusite.jpg";
 import "./index.css";
 import "../../global.css";
 
-export const Home: React.FC = () => {
+export const Home = () => {
   return (
     <section className="home">
       <div className="container1">
