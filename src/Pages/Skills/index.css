@@ -3,11 +3,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10vh 0; /* Aumente o espaçamento superior e inferior */
 }
 
 .sobre h2 {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   color: whitesmoke;
   margin-bottom: 1.5em;
   font-size: 50px;
@@ -70,7 +69,7 @@
 .sobre ul {
   display: flex;
   align-items: center;
-  justify-content: space-around; 
+  justify-content: space-around;
   margin: 5px;
   margin-top: 20px;
   display: grid;

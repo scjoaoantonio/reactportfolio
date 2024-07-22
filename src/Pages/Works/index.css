@@ -9,7 +9,7 @@
 /* Estilos para telas com largura maior ou igual a 880px */
 @media (min-width: 880px) {
   .portfolio .grid {
-    grid-template-columns: repeat(3, 260px); 
+    grid-template-columns: repeat(3, 260px);
     align-content: center;
     justify-content: center;
   }
@@ -22,7 +22,7 @@
 }
 
 .portfolio h2 {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   color: rgb(163, 218, 255);
   margin-bottom: 1em;
   font-size: 2em;
@@ -38,7 +38,7 @@
 }
 
 .works h2 {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   color: whitesmoke;
   margin-bottom: 1em;
   font-size: 50px;
@@ -59,7 +59,7 @@
   position: relative;
   overflow: hidden;
   background-image: linear-gradient(#333, #333);
-  transition: all .5s;
+  transition: all 0.5s;
 }
 .carde .imge {
   width: 100%;
@@ -67,18 +67,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all .8s;
+  transition: all 0.8s;
   z-index: 0;
   position: relative;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .carde .contente {
-display: flex;
+  display: flex;
   padding: 0px 20px;
   height: 0;
   opacity: 0;
-  transition: all .5s;
+  transition: all 0.5s;
   position: relative;
   box-sizing: border-box;
   overflow: hidden;
@@ -96,10 +96,20 @@ display: flex;
 }
 
 .carde .contente .titlee {
-font-family: 'Rubik', sans-serif;
-color: whitesmoke;
-font-size: 80%;
-font-weight: 600;
+  font-family: "Rubik", sans-serif;
+  color: whitesmoke;
+  font-size: 80%;
+  font-weight: 600;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 .footer {
   height: 100px;
@@ -110,17 +120,17 @@ font-weight: 600;
   align-items: center;
 }
 #milhas {
-  background-image: url('../../img/others/milhas.png');
+  background-image: url("../../img/others/milhas.png");
   background-size: cover;
   background-position: center;
 }
 #quilombo {
-  background-image: url('../../img/others/quilombo.png');
+  background-image: url("../../img/others/quilombo.png");
   background-size: cover;
   background-position: center;
 }
 #cavalinho {
-  background-image: url('../../img/others/cavalinho.png');
+  background-image: url("../../img/others/cavalinho.png");
   background-size: cover;
   background-position: center;
 }

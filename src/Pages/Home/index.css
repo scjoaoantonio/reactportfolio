@@ -1,92 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1;0,300;1,1000&family=Source+Code+Pro:wght@200&display=swap');
-
 .home {
-    height: 100vh;
-    display: flex;
-    padding: 5%;
-    columns: 2;
-    align-items: center;
-    justify-content: space-around;
+  height: auto; /* Altere para 'auto' para acomodar o conteúdo */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5%;
+  box-sizing: border-box; /* Adiciona box-sizing para evitar problemas com padding */
 }
-
 .container1 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    float: none; /* Remova o float para dispositivos móveis */
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .foto {
-    height: auto; /* Ajuste a altura automaticamente */
-    max-width: 100%; /* Ajuste a largura automaticamente */
-    border-radius: 20%;
-    box-shadow: 1px 2px 15px rgba(0, 255, 255, 0.2);
-    margin-bottom: 20px;
+  height: auto; /* Ajusta a altura automaticamente */
+  max-width: 100%; /* Ajusta a largura automaticamente */
+  border-radius: 20%;
+  box-shadow: 1px 2px 15px rgba(0, 255, 255, 0.2);
+  margin-bottom: 20px;
 }
 
 .site-title {
-    color: whitesmoke;
-    text-align: center;
-    font-size: 2.5em;
-    font-family: 'Rubik', sans-serif;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 2.5em;
+  font-family: "Rubik", sans-serif;
 }
 
 .site-subtitle {
-    color: whitesmoke;
-    text-align: center;
-    font-size: 1em;
-    font-family: 'Sofia Sans', 'Indie Flower', cursive;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1em;
+  font-family: "Sofia Sans", "Indie Flower", cursive;
 }
 
 .container2 {
-    float: none; /* Remova o float para dispositivos móveis */
-    width: 100%;
+  width: 100%;
+  float: none; /* Remova o float para dispositivos móveis */
+  width: 100%;
 }
 
 .container2 h2 {
-    font-family: 'Rubik', sans-serif;
-    color: whitesmoke;
-    margin-bottom: 1em;
-    font-size: 2em; /* Reduzi o tamanho do título para dispositivos móveis */
-    text-decoration: underline;
-    text-decoration-color: rgb(130, 205, 255);
+  font-family: "Rubik", sans-serif;
+  color: whitesmoke;
+  margin-bottom: 1em;
+  font-size: 2em; /* Reduz o tamanho do título para dispositivos móveis */
+  text-decoration: underline;
+  text-decoration-color: rgb(130, 205, 255);
+  text-align: center;
 }
 
 .site-apresentation {
-    color: whitesmoke;
-    text-align: center;
-    font-size: 1em;
-    font-family: 'Sofia Sans', 'Indie Flower', 'cursive';
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1em;
+  font-family: "Sofia Sans", "Indie Flower", "cursive";
 }
 
 .site-apresentation b {
-    font-weight: bolder;
-    font-size: 1.1em;
-    color: rgb(130, 205, 255);
+  font-weight: bolder;
+  font-size: 1.1em;
+  color: rgb(130, 205, 255);
 }
 
 .space {
-    color: whitesmoke;
-    text-align: center;
-    font-size: 1.5em;
-    font-family: 'Source Code Pro', 'Sofia Sans', 'Indie Flower', 'cursive';
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Source Code Pro", "Sofia Sans", "Indie Flower", "cursive";
 }
 
 /* Estilos para telas menores que 768px (celulares) */
 @media screen and (max-width: 768px) {
-    .home {
-        flex-direction: column;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        margin-top: 20px;
-    }
-    .foto {
-        max-width: 100%; /* Ajuste a largura da imagem */
-    }
-    .container2 h2 {
-        display: none;
-    }
+  .home {
+    margin-top: 50px;
+    flex-direction: column;
+    padding: 5%; /* Ajusta o padding para dispositivos móveis */
+    gap: 25px;
+  }
+  .container2 h2 {
+    font-size: 1.5em; /* Ajusta o tamanho do título */
+  }
+  .site-apresentation {
+    font-size: 1em; /* Ajusta o tamanho da fonte */
+  }
 }
