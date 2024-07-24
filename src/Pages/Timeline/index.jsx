@@ -51,7 +51,6 @@ const Timeline = () => {
                   <use href="#arrow" />
                 </svg>
               </button>
-              <span className="timeline__dot"></span>
               <span id={`item${index}-name`} className="timeline__meta">
                 <time className="timeline__date" dateTime={item.dateTime}>
                   {item.date}
@@ -81,45 +80,46 @@ const Timeline = () => {
 
 const timelineData = [
   {
-    dateTime: "1970-01-01",
-    date: "January 1, 1970",
-    title: "Unix Epoch",
+    date: "Agosto, 2019",
+    title: "UFSJ",
     content:
-      "This is the day the Unix clock began (or December 31, 1969 if you live behind UTC 😉).",
+      "Após cursar 1 período na UIT (Universidade de Itaúna) decidi recomeçar o curso Ciência da Computação na UFSJ (Universidade Federal de São João del Rei",
   },
   {
-    dateTime: "1973-10-17",
-    date: "October 17, 1973",
-    title: "Digits Within ISO 8601 Format",
+    date: "Julho, 2020",
+    title: "Desenvolvimento Web",
     content:
-      "At 6:36:57 PM UTC, the date in ISO 8601 format (1973-10-17) within the time digits (119731017) appeared for the first time.",
+      "Comecei a estudar desenvolvimento web durante a pandemia em 2020, focando em HTML e CSS ",
   },
   {
-    dateTime: "2001-09-09",
-    date: "September 9, 2001",
-    title: "1 Billion Seconds",
+    date: "Outubro, 2021",
+    title: "Yes, We Code",
     content:
-      "Unix time reached 1,000,000,000 seconds at 1:46:40 AM UTC. The Danish UNIX User Group celebrated this in Copenhagen, Denmark.",
+      "Entrei no programa Yes, We Code. Uma ONG determinada a formar pessoas para a área de tecnologia da informação. Nesse programa fui aluno e mentor, desenvolvendo em HTML, CSS, JS, React e FLutter",
   },
   {
-    dateTime: "2009-02-13",
-    date: "February 13, 2009",
-    title: "1,234,567,890 Seconds",
+    date: "Julho, 2022",
+    title: "Setor de Projetos (Linked)",
     content:
-      "At 11:31:30 PM UTC, the digits of the time were 1234567890. This was celebrated worldwide, and even Google had a doodle for it.",
+      "Entrei no setor de Desenvolvimento de Projetos da Linked, empresa júnior de ciência da computação",
   },
   {
-    dateTime: "2033-05-18",
-    date: "May 18, 2033",
-    title: "2 Billion Seconds",
-    content: "Unix time will reach 2,000,000,000 seconds at 3:33:20 AM UTC.",
+    date: "Janeiro, 2023",
+    title: "Setor de Comercial (Linked)",
+    content:
+      "Fui eleito Diretor Comercial e Vice Presidente da Linked, empresa júnior de ciência da computação",
   },
   {
-    dateTime: "2038-01-19",
-    date: "January 19, 2038",
-    title: "Unix Epochalypse",
+    date: "Outubro, 2023",
+    title: "Kune",
     content:
-      "Also known as the year 2038 problem, clocks running on a 32-bit signed integer will flip from 3:14:08 AM UTC on this day to 8:45:52 PM UTC on December 13, 1901.",
+      "Comecei um estágio na área de desenvolvimento web na Kune Comunidades Inteligentes, onde me aprofundei em ReactJS",
+  },
+  {
+    date: "Janeiro, 2024",
+    title: "Presidente (Linked)",
+    content:
+      "Fui eleito Presidente da Linked, empresa júnior de ciência da computação",
   },
 ];
 
