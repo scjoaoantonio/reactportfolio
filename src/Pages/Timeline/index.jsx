@@ -54,7 +54,12 @@ const Timeline = () => {
                     <use href="#arrow" />
                   </svg>
                 </button>
-                <span id={`item${index}-name`} className="timeline__meta">
+
+                <span
+                  onClick={() => toggleItem(index)}
+                  id={`item${index}-name`}
+                  className="timeline__meta"
+                >
                   <time className="timeline__date" dateTime={item.dateTime}>
                     {item.date}
                   </time>
@@ -115,7 +120,7 @@ const timelineData = [
   },
   {
     date: "Outubro, 2023",
-    title: "Kune",
+    title: "Startup Kune",
     content:
       "Comecei um estágio na área de desenvolvimento web na Kune Comunidades Inteligentes, onde me aprofundei em ReactJS",
   },
