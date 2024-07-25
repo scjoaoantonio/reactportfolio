@@ -107,15 +107,6 @@
   border: 0;
 }
 
-.footer {
-  height: 100px;
-  color: whitesmoke;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 #milhas {
   background-image: url("../../img/others/milhas.png");
   background-size: cover;

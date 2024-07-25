@@ -1,0 +1,96 @@
+.timeline-container {
+  width: 80%;
+  overflow-x: auto;
+  padding: 1rem;
+  box-sizing: border-box;
+  color: whitesmoke;
+}
+
+#timeline {
+  display: flex;
+  flex-direction: row;
+}
+
+h2 {
+  font-family: "Rubik", sans-serif;
+  color: whitesmoke;
+  margin-bottom: 1em;
+  font-size: 50px;
+  text-decoration: underline;
+  text-decoration-color: rgb(130, 205, 255);
+  text-align: center; /* Centralize o título */
+}
+/* Estilizando a barra de rolagem */
+.timeline-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.timeline-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.timeline-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.timeline-container::-webkit-scrollbar-track {
+  background: #222;
+  border-radius: 4px;
+}
+
+.timeline__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  flex: 0 0 auto;
+  width: 200px;
+  background-color: #222;
+}
+
+.timeline__item-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.timeline__dot {
+  width: 1rem;
+  height: 1rem;
+  background: #000;
+  border-radius: 50%;
+}
+
+.timeline__meta {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.timeline__item-body {
+  margin-top: 0.5rem;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline__item-body-content {
+  padding: 0.5rem;
+  background: none;
+  border-radius: 0.25rem;
+}
+
+.timeline__arrow {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.timeline__arrow-icon {
+  transform: rotate(-90deg);
+}
+
+.timeline__arrow[aria-expanded="true"] .timeline__arrow-icon {
+  transform: rotate(0);
+}

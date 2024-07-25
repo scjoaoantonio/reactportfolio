@@ -4,6 +4,7 @@ import { Menu } from "./Components/Menu";
 import { Home } from "./Pages/Home";
 import { Skills } from "./Pages/Skills";
 import { Works } from "./Pages/Works";
+import Timeline from "./Pages/Timeline";
 
 const App = () => {
   return (
@@ -14,8 +15,11 @@ const App = () => {
         <hr />
         <Skills />
         <hr />
+        <Works />
+        <hr />
+        <Timeline />
+        <footer className="footer"></footer>
       </div>
-      <Works />
     </>
   );
 };

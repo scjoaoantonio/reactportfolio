@@ -107,3 +107,13 @@ body {
   color: #252323;
   border: 0px black;
 }
+
+.footer {
+  height: 100px;
+  color: whitesmoke;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}

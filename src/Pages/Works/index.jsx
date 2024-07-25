@@ -68,7 +68,6 @@ export const Works = () => {
           </div>
         </div>
       </div>
-      <footer className="footer"></footer>
     </section>
   );
 };
