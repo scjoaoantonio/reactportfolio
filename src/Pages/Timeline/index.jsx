@@ -15,66 +15,70 @@ const Timeline = () => {
   };
 
   return (
-    <section className="timeline">
-      <svg display="none">
-        <symbol id="arrow">
-          <polyline
-            points="7 10,12 15,17 10"
-            fill="none"
-            stroke="currentcolor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-          />
-        </symbol>
-      </svg>
-      <div id="timeline" className="timeline">
-        {timelineData.map((item, index) => (
-          <div key={index} className="timeline__item">
-            <div className="timeline__item-header">
-              <button
-                className="timeline__arrow"
-                type="button"
-                id={`item${index}`}
-                aria-labelledby={`item${index}-name`}
-                aria-expanded={expandedItems[index] || false}
-                aria-controls={`item${index}-ctrld`}
-                aria-haspopup="true"
-                onClick={() => toggleItem(index)}
-              >
-                <svg
-                  className="timeline__arrow-icon"
-                  viewBox="0 0 24 24"
-                  width="24px"
-                  height="24px"
+    <>
+      <h2>Timeline</h2>
+      <section className="timeline-container">
+        <svg display="none">
+          <symbol id="arrow">
+            <polyline
+              points="7 10,12 15,17 10"
+              fill="none"
+              stroke="currentcolor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              color="white"
+            />
+          </symbol>
+        </svg>
+        <div id="timeline" className="timeline">
+          {timelineData.map((item, index) => (
+            <div key={index} className="timeline__item">
+              <div className="timeline__item-header">
+                <button
+                  className="timeline__arrow"
+                  type="button"
+                  id={`item${index}`}
+                  aria-labelledby={`item${index}-name`}
+                  aria-expanded={expandedItems[index] || false}
+                  aria-controls={`item${index}-ctrld`}
+                  aria-haspopup="true"
+                  onClick={() => toggleItem(index)}
                 >
-                  <use href="#arrow" />
-                </svg>
-              </button>
-              <span id={`item${index}-name`} className="timeline__meta">
-                <time className="timeline__date" dateTime={item.dateTime}>
-                  {item.date}
-                </time>
-                <br />
-                <strong className="timeline__title">{item.title}</strong>
-              </span>
-            </div>
-            <div
-              className="timeline__item-body"
-              id={`item${index}-ctrld`}
-              role="region"
-              aria-labelledby={`item${index}`}
-              aria-hidden={!expandedItems[index] || false}
-              style={{ display: expandedItems[index] ? "flex" : "none" }}
-            >
-              <div className="timeline__item-body-content">
-                <p className="timeline__item-p">{item.content}</p>
+                  <svg
+                    className="timeline__arrow-icon"
+                    viewBox="0 0 24 24"
+                    width="24px"
+                    height="24px"
+                  >
+                    <use href="#arrow" />
+                  </svg>
+                </button>
+                <span id={`item${index}-name`} className="timeline__meta">
+                  <time className="timeline__date" dateTime={item.dateTime}>
+                    {item.date}
+                  </time>
+                  <br />
+                  <strong className="timeline__title">{item.title}</strong>
+                </span>
+              </div>
+              <div
+                className="timeline__item-body"
+                id={`item${index}-ctrld`}
+                role="region"
+                aria-labelledby={`item${index}`}
+                aria-hidden={!expandedItems[index] || false}
+                style={{ display: expandedItems[index] ? "flex" : "none" }}
+              >
+                <div className="timeline__item-body-content">
+                  <p className="timeline__item-p">{item.content}</p>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </div>
-    </section>
+          ))}
+        </div>
+      </section>
+    </>
   );
 };
 

@@ -18,6 +18,7 @@ const App = () => {
         <Works />
         <hr />
         <Timeline />
+        <footer className="footer"></footer>
       </div>
     </>
   );
