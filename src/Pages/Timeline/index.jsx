@@ -114,7 +114,7 @@ const timelineData = [
   },
   {
     date: "Janeiro, 2023",
-    title: "Setor de Comercial (Linked)",
+    title: "Setor Comercial (Linked)",
     content:
       "Fui eleito Diretor Comercial e Vice Presidente da Linked, empresa júnior de ciência da computação",
   },
