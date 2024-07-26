@@ -13,6 +13,8 @@ import PYTHON from "../../img/icons/python.png";
 import REACT from "../../img/icons/physics.png";
 import PHOTOSHOP from "../../img/icons/photoshop.png";
 import CANVA from "../../img/icons/canva.png";
+import TYPESCRIPT from "../../img/icons/typescript.png";
+import JAVASCRIPT from "../../img/icons/javascript.png";
 
 export const Skills = () => {
   return (
@@ -73,6 +75,22 @@ export const Skills = () => {
             <li>
               <img className="lista-icon" src={PYTHON} alt="Python Icon" />
               Python
+            </li>
+            <li>
+              <img
+                className="lista-icon"
+                src={JAVASCRIPT}
+                alt="Javascript Icon"
+              />
+              Javascript
+            </li>
+            <li>
+              <img
+                className="lista-icon"
+                src={TYPESCRIPT}
+                alt="Typescript Icon"
+              />
+              Typescript
             </li>
           </ul>
         </div>
