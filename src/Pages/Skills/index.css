@@ -1,8 +1,11 @@
+/* Estilos básicos para a seção Skills */
 .sobre {
-  height: auto; /* Altere a altura para 'auto' para acomodar o conteúdo */
+  height: auto; /* Mantido como auto para acomodar o conteúdo */
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 2em; /* Adiciona um espaçamento na parte inferior */
+  width: 100%;
 }
 
 .sobre h2 {
@@ -12,7 +15,7 @@
   font-size: 50px;
   text-decoration: underline;
   text-decoration-color: rgb(130, 205, 255);
-  text-align: center; /* Centralize o título */
+  text-align: center;
 }
 
 .sobre h3 {
@@ -23,21 +26,42 @@
 }
 
 .about-container {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  width: 80%;
+  display: grid;
+  justify-content: space-between;
+  gap: 2em;
   justify-content: center;
-  padding-bottom: 4vh;
-  gap: 25px;
+}
+
+/* Estilos para telas com largura maior ou igual a 560px */
+@media (min-width: 560px) {
+  .about-container {
+    grid-template-columns: repeat(2, 240px);
+  }
+}
+
+/* Estilos para telas com largura maior ou igual a 880px */
+@media (min-width: 880px) {
+  .about-container {
+    grid-template-columns: repeat(3, 260px);
+  }
+}
+
+/* Estilos para telas com largura maior ou igual a 1200px */
+@media (min-width: 1200px) {
+  .about-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .about-item {
+  padding: 10px;
   display: flex;
   flex-direction: column;
+  columns: 2;
   text-align: center;
-  width: 30vh;
-  height: 35vh;
-  margin: 0px 20px;
+  width: 100%; /* Faz com que os itens ocupem 100% da coluna disponível */
+  height: auto; /* Ajusta a altura automaticamente */
   border-radius: 5px;
   transition: all 0.4s ease-in-out;
   box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.4);
@@ -46,16 +70,6 @@
 .about-item:hover {
   transform: translateY(-5px);
   box-shadow: 1px 4px 15px rgba(0, 255, 255, 0.2);
-}
-
-.about-lista {
-  text-align: center;
-}
-
-.lista {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .sobre li {
@@ -68,16 +82,14 @@
 }
 
 .sobre ul {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr  1fr;
+  gap: 10px;
   justify-content: space-around;
   margin: 5px;
   margin-top: 20px;
-  display: grid;
-  grid: auto-flow / 1fr 1fr;
-  gap: 10px;
 }
 
 .lista-icon {
-  width: 40px;
+  width: 30px;
 }
