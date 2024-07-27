@@ -81,7 +81,7 @@ export const Works = () => {
               </div>
               <div className="contente">
                 <h3 className="titlee">
-                  Site para Drogaria São Lucas - Itaúna (2019)
+                  Site para Drogaria São Lucas - Itaúna (2021)
                 </h3>
               </div>
             </div>
