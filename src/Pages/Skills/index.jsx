@@ -17,7 +17,7 @@ import CANVA from "../../img/icons/canva.png";
 export const Skills = () => {
   return (
     <section className="sobre">
-      <h2>Skills</h2>
+      <h2>Habilidades</h2>
       <div className="about-container">
         <div className="about-item">
           <h3>Front-end</h3>

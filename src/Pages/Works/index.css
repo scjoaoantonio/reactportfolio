@@ -119,8 +119,14 @@
   background-position: center;
 }
 
-#cavalinho {
+/* #cavalinho {
   background-image: url("../../img/others/cavalinho.png");
+  background-size: cover;
+  background-position: center;
+} */
+
+#farmacia {
+  background-image: url("../../img/others/farmacia.png");
   background-size: cover;
   background-position: center;
 }

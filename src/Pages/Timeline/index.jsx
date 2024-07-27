@@ -16,7 +16,7 @@ const Timeline = () => {
 
   return (
     <>
-      <h2>Timeline</h2>
+      <h2>Experiências</h2>
       <section className="timeline-container">
         <svg display="none">
           <symbol id="arrow">

@@ -5,7 +5,7 @@ import "../../global.css";
 export const Works = () => {
   return (
     <section className="works">
-      <h2>Works</h2>
+      <h2>Projetos</h2>
       <div className="portfolio">
         <div className="grid">
           <div className="containere">
@@ -48,7 +48,7 @@ export const Works = () => {
             </div>
           </div>
 
-          <div className="containere">
+          {/* <div className="containere">
             <div className="carde">
               <div id="cavalinho" className="imge">
                 <a
@@ -63,6 +63,26 @@ export const Works = () => {
               </div>
               <div className="contente">
                 <h3 className="titlee">Site de piadas e trocadilhos (2019)</h3>
+              </div>
+            </div>
+          </div> */}
+          <div className="containere">
+            <div className="carde">
+              <div id="farmacia" className="imge">
+                <a
+                  className="imge"
+                  target="_blank"
+                  href="https://scjoaoantonio.github.io/drogariasaolucasitauna/"
+                  rel="noreferrer"
+                  aria-label="View the Drogaria São Lucas website"
+                >
+                  <span className="sr-only">Farmácia</span>
+                </a>
+              </div>
+              <div className="contente">
+                <h3 className="titlee">
+                  Site para Drogaria São Lucas - Itaúna (2019)
+                </h3>
               </div>
             </div>
           </div>
