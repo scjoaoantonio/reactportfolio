@@ -33,16 +33,12 @@ export const Skills = () => {
               CSS3
             </li>
             <li>
-              <img className="lista-icon" src={FLUTTER} alt="Flutter Icon" />
-              Flutter
-            </li>
-            <li>
               <img
                 className="lista-icon"
-                src={WORDPRESS}
-                alt="Wordpress Icon"
+                src={JAVASCRIPT}
+                alt="Javascript Icon"
               />
-              Wordpress
+              Javascript
             </li>
           </ul>
         </div>
@@ -64,6 +60,18 @@ export const Skills = () => {
               <img className="lista-icon" src={GIT} alt="Git Icon" />
               Git
             </li>
+            <li>
+              <img
+                className="lista-icon"
+                src={WORDPRESS}
+                alt="Wordpress Icon"
+              />
+              Wordpress
+            </li>
+            <li>
+              <img className="lista-icon" src={FLUTTER} alt="Flutter Icon" />
+              Flutter
+            </li>
           </ul>
         </div>
         <div className="about-item">
@@ -76,14 +84,7 @@ export const Skills = () => {
               <img className="lista-icon" src={PYTHON} alt="Python Icon" />
               Python
             </li>
-            <li>
-              <img
-                className="lista-icon"
-                src={JAVASCRIPT}
-                alt="Javascript Icon"
-              />
-              Javascript
-            </li>
+
             <li>
               <img
                 className="lista-icon"
