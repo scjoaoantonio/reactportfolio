@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./index.css";
 import "../../global.css";
 
@@ -16,106 +16,90 @@ import CANVA from "../../img/icons/canva.png";
 import TYPESCRIPT from "../../img/icons/typescript.png";
 import JAVASCRIPT from "../../img/icons/javascript.png";
 
-export const Skills = () => {
-  return (
-    <section className="sobre">
-      <h2>Habilidades</h2>
-      <div className="about-container">
-        <div className="about-item">
-          <h3>Front-end</h3>
-          <ul>
-            <li>
-              <img className="lista-icon" src={HTML} alt="HTML5 Icon" />
-              HTML5
-            </li>
-            <li>
-              <img className="lista-icon" src={CSS} alt="CSS3 Icon" />
-              CSS3
-            </li>
-            <li>
-              <img
-                className="lista-icon"
-                src={JAVASCRIPT}
-                alt="Javascript Icon"
-              />
-              Javascript
-            </li>
-          </ul>
-        </div>
-        {/*<div className="about-item">
-                    <h3>Back-end</h3>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>*/}
-        <div className="about-item">
-          <h3>Frameworks</h3>
-          <ul>
-            <li>
-              <img className="lista-icon" src={REACT} alt="ReactJS Icon" />
-              ReactJS
-            </li>
-            <li>
-              <img className="lista-icon" src={GIT} alt="Git Icon" />
-              Git
-            </li>
-            <li>
-              <img
-                className="lista-icon"
-                src={WORDPRESS}
-                alt="Wordpress Icon"
-              />
-              Wordpress
-            </li>
-            <li>
-              <img className="lista-icon" src={FLUTTER} alt="Flutter Icon" />
-              Flutter
-            </li>
-          </ul>
-        </div>
-        <div className="about-item">
-          <h3>Languages</h3>
-          <ul>
-            <li>
-              <img className="lista-icon" src={C} alt="C Language Icon" />C
-            </li>
-            <li>
-              <img className="lista-icon" src={PYTHON} alt="Python Icon" />
-              Python
-            </li>
+const GRUPOS = [
+  {
+    titulo: "Front-end",
+    itens: [
+      { nome: "HTML5", icone: HTML },
+      { nome: "CSS3", icone: CSS },
+      { nome: "ReactJS", icone: REACT },
+    ],
+  },
+  {
+    titulo: "Linguagens",
+    itens: [
+      { nome: "C", icone: C },
+      { nome: "Python", icone: PYTHON },
+      { nome: "JavaScript", icone: JAVASCRIPT },
+      { nome: "TypeScript", icone: TYPESCRIPT },
+    ],
+  },
+  {
+    titulo: "Ferramentas",
+    itens: [
+      { nome: "Git", icone: GIT },
+      { nome: "Wordpress", icone: WORDPRESS },
+      { nome: "Flutter", icone: FLUTTER },
+    ],
+  },
+  {
+    titulo: "Design",
+    itens: [
+      { nome: "Figma", icone: FIGMA },
+      { nome: "Photoshop", icone: PHOTOSHOP },
+      { nome: "Canva", icone: CANVA },
+    ],
+  },
+];
 
-            <li>
-              <img
-                className="lista-icon"
-                src={TYPESCRIPT}
-                alt="Typescript Icon"
-              />
-              Typescript
-            </li>
-          </ul>
-        </div>
-        <div className="about-item">
-          <h3>Design</h3>
-          <ul>
-            <li>
-              <img
-                className="lista-icon"
-                src={PHOTOSHOP}
-                alt="Photoshop Icon"
-              />
-              Photoshop
-            </li>
-            <li>
-              <img className="lista-icon" src={FIGMA} alt="Figma Icon" />
-              Figma
-            </li>
-            <li>
-              <img className="lista-icon" src={CANVA} alt="Canva Icon" />
-              Canva
-            </li>
-          </ul>
-        </div>
+export const Skills = () => {
+  const secaoRef = useRef(null);
+
+  useEffect(() => {
+    const alvos = secaoRef.current?.querySelectorAll(".revelar") ?? [];
+    if (!("IntersectionObserver" in window)) {
+      alvos.forEach((el) => el.classList.add("revelar--visivel"));
+      return;
+    }
+    const observador = new IntersectionObserver(
+      (entradas) => {
+        entradas.forEach((entrada) => {
+          if (entrada.isIntersecting) {
+            entrada.target.classList.add("revelar--visivel");
+            observador.unobserve(entrada.target);
+          }
+        });
+      },
+      { rootMargin: "0px 0px -10% 0px", threshold: 0.1 }
+    );
+    alvos.forEach((el) => observador.observe(el));
+    return () => observador.disconnect();
+  }, []);
+
+  return (
+    <section className="skills container" id="habilidades" ref={secaoRef}>
+      <h2 className="secao-titulo">
+        Habilidades <span className="grad">técnicas</span>
+      </h2>
+
+      <div className="skills__grid">
+        {GRUPOS.map((grupo, indice) => (
+          <div
+            className="skills__card revelar"
+            key={grupo.titulo}
+            style={{ transitionDelay: `${indice * 80}ms` }}
+          >
+            <h3 className="skills__card-titulo">{grupo.titulo}</h3>
+            <div className="skills__chips">
+              {grupo.itens.map((item) => (
+                <span className="skills__chip" key={item.nome}>
+                  <img src={item.icone} alt="" className="skills__chip-icone" />
+                  {item.nome}
+                </span>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
