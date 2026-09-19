@@ -7,11 +7,11 @@ import EMAIL from "../../img/icons/email.png";
 import LINKEDIN from "../../img/icons/linkedin.png";
 import Logo from "../../img/others/logojao2.png";
 
-const LINKS = [
-  { href: "#habilidades", label: "habilidades" },
-  { href: "#projetos", label: "projetos" },
-  { href: "#experiencias", label: "experiências" },
-];
+// const LINKS = [
+//   { href: "#habilidades", label: "habilidades" },
+//   { href: "#projetos", label: "projetos" },
+//   { href: "#experiencias", label: "experiências" },
+// ];
 
 export const Menu = () => {
   const [rolado, setRolado] = useState(false);
@@ -35,7 +35,7 @@ export const Menu = () => {
   return (
     <nav className={`menu ${rolado ? "menu--rolado" : ""}`}>
       <div className="container menu__linha">
-        <a href="#" className="menu__logo" aria-label="Início">
+        <a href="https://scjoaoantonio.vercel.app" className="menu__logo" aria-label="Início">
           <img src={Logo} alt="Logo JAO" />
         </a>
 
