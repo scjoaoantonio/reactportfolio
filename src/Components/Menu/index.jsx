@@ -6,6 +6,7 @@ import GITHUB from "../../img/icons/github.png";
 import EMAIL from "../../img/icons/email.png";
 import LINKEDIN from "../../img/icons/linkedin.png";
 import Logo from "../../img/others/logojao2.png";
+import INSTAGRAM from "../../img/icons/instagram.png";
 
 // const LINKS = [
 //   { href: "#habilidades", label: "habilidades" },
@@ -61,6 +62,9 @@ export const Menu = () => {
         </ul> */}
 
         <div className="menu__redes menu__redes--desktop">
+          <a target="_blank" rel="noreferrer" href="https://www.instagram.com/scjoaoantonio" aria-label="Instagram">
+           <img src={INSTAGRAM} alt="" />
+          </a>  
           <a target="_blank" rel="noreferrer" href="https://github.com/scjoaoantonio" aria-label="GitHub">
             <img src={GITHUB} alt="" />
           </a>

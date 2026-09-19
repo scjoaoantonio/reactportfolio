@@ -9,11 +9,16 @@ export const Contact = () => {
           Vamos <span className="grad">conversar</span>?
         </h2>
         <p className="contato__texto">
-          Só não respondo atleticano.
+          Me encontre nas redes sociais abaixo.
         </p>
         <div className="contato__acoes">
-          <a className="botao botao--primario" href="mailto:joaoasccc@gmail.com">
-            joaoasccc@gmail.com
+          <a
+            className="botao botao--fantasma"
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.instagram.com/scjoaoantonio"
+          >
+            Instagram
           </a>
           <a
             className="botao botao--fantasma"
