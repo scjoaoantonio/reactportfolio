@@ -1,119 +1,174 @@
-/* soft reset do css */
+/* ==========================================================================
+   Design tokens — paleta e escalas usadas em todo o site
+   ========================================================================== */
+:root {
+  color-scheme: dark;
+
+  /* Superfícies */
+  --bg: #0a0d14;
+  --bg-alt: #0e121b;
+  --surface: #12161f;
+  --surface-high: #171c28;
+  --border: #232a38;
+  --border-strong: #313a4d;
+
+  /* Texto */
+  --text: #e8ecf4;
+  --text-soft: #a4abbd;
+  --text-weak: #6b7385;
+
+  /* Marca */
+  --accent-1: #4c7cf0;
+  --accent-2: #9b6cf2;
+  --accent-gradient: linear-gradient(120deg, var(--accent-1), var(--accent-2));
+  --sucesso: #5ed99b;
+
+  /* Tipografia */
+  --fonte-corpo: "Inter", system-ui, sans-serif;
+  --fonte-titulo: "Space Grotesk", var(--fonte-corpo);
+  --fonte-mono: "JetBrains Mono", monospace;
+
+  /* Espaçamento */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --sp-7: 48px;
+  --sp-8: 64px;
+  --sp-9: 96px;
+
+  /* Forma e sombra */
+  --raio-sm: 6px;
+  --raio-md: 10px;
+  --raio-lg: 16px;
+  --sombra-md: 0 12px 30px -12px rgba(0, 0, 0, 0.55);
+  --sombra-lg: 0 32px 70px -30px rgba(0, 0, 0, 0.7);
+  --transicao: 200ms ease-out;
+}
+
+/* ==========================================================================
+   Reset leve
+   ========================================================================== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #252323;
-  background-size: auto 100vh;
-  font-family: "Source Code Pro", monospace;
-  height: 100vh;
-  font-size: 12px;
+  background-color: var(--bg);
+  background-image: radial-gradient(
+      circle at 12% 8%,
+      rgba(76, 124, 240, 0.08),
+      transparent 42%
+    ),
+    radial-gradient(circle at 88% 18%, rgba(155, 108, 242, 0.06), transparent 42%);
+  color: var(--text);
+  font-family: var(--fonte-corpo);
+  font-size: 15px;
+  line-height: 1.6;
+  min-height: 100vh;
 }
 
-/* se a tela tiver pelo menos 400px vai carregar estes estilos */
-@media (min-width: 400px) {
-  body {
-    font-size: 14px;
-  }
-}
-
-/* breakpoint */
 @media (min-width: 600px) {
   body {
-    background-attachment: fixed;
-    background-size: cover;
-    font-size: 18px;
-  }
-}
-
-/* breakpoint */
-@media (min-width: 1200px) {
-  body {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
 @media (min-width: 1200px) {
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1200px;
-  }
-}
-
-.sobre h2,
-.contato h2,
-.portfolio h2 {
-  font-family: "Rubik", sans-serif;
-  color: rgb(163, 218, 255);
-  font-size: 2em;
-}
-
-/* soft reset do css */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  /*background-image: url(https://i.pinimg.com/originals/05/7e/3b/057e3bd5a18feb378dc2f6c208e253c1.jpg);*/
-  background-color: #252323;
-  background-size: auto 100vh;
-  font-family: "Source Code Pro", monospace;
-  height: 100vh;
-  font-size: 12px;
-}
-/* se a tela tiver pelo menos 400px vai carregar estes estilos */
-@media (min-width: 400px) {
   body {
-    font-size: 14px;
+    font-size: 17px;
   }
 }
 
-/* breakpoint */
-@media (min-width: 600px) {
-  body {
-    background-attachment: fixed;
-    background-size: cover;
-    font-size: 18px;
-  }
+h1, h2, h3 {
+  font-family: var(--fonte-titulo);
+  letter-spacing: -0.01em;
 }
 
-/* breakpoint */
-@media (min-width: 1200px) {
-  body {
-    font-size: 20px;
-  }
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--sp-5);
+  padding-right: var(--sp-5);
 }
 
-.container2 {
+.secao-titulo {
+  font-family: var(--fonte-titulo);
+  color: var(--text);
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 600;
   text-align: center;
+  margin-bottom: var(--sp-7);
 }
 
+.secao-titulo .grad {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ==========================================================================
+   Layout geral do App
+   ========================================================================== */
 .APP {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  align-items: center;
   width: 100%;
-  height: auto;
 }
 
 .APP hr {
-  width: 40%;
-  margin: 60px 0;
-  color: #252323;
-  border: 0px black;
+  width: 100%;
+  max-width: 1200px;
+  margin: var(--sp-8) auto;
+  border: 0;
+  border-top: 1px solid var(--border);
 }
 
 .footer {
   height: 100px;
-  color: whitesmoke;
+  color: var(--text-weak);
+  font-family: var(--fonte-mono);
+  font-size: 13px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: var(--sp-2);
+}
+
+/* ==========================================================================
+   Revelação suave ao rolar — reutilizável em qualquer seção
+   ========================================================================== */
+.revelar {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 500ms ease-out, transform 500ms ease-out;
+}
+
+.revelar--visivel {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .revelar {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
 }

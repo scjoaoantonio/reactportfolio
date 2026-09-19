@@ -12,11 +12,11 @@ const App = () => {
       <Menu />
       <div className="APP">
         <Home />
-        <hr />
+        {/* <hr /> */}
         <Skills />
-        <hr />
-        <Works />
-        <hr />
+        {/* <hr /> */}
+        {/* <Works /> */}
+        {/* <hr /> */}
         <Timeline />
         <footer className="footer"></footer>
       </div>
