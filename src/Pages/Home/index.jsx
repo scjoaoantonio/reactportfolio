@@ -18,15 +18,23 @@ export const Home = () => {
             <br />
             Hoje atuo como  <b>Engenheiro de Software</b> na <b>SYDLE</b>, trabalhando de forma full stack na plataforma <b>SYDLE ONE</b>. 
           </p>
-{/* 
+
           <div className="home__acoes">
-            <a className="botao botao--primario" href="#projetos">
+            {/* <a className="botao botao--primario" href="#projetos">
               Ver projetos
-            </a>
-            <a className="botao botao--fantasma" href="mailto:joaoasccc@gmail.com">
+            </a> */}
+            <a className="botao botao--primario"
+               href="#contato"
+            >
               Falar comigo
             </a>
-          </div> */}
+            <a className="botao botao--fantasma"
+              href="/curriculo-joao-antonio.pdf"
+              download="Joao-Antonio-Curriculo.pdf"
+            >
+              Baixar meu currículo
+            </a>
+          </div>
         </div>
 
         <div className="home__foto-wrap">

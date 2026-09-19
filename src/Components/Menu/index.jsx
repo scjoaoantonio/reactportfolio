@@ -12,6 +12,7 @@ import INSTAGRAM from "../../img/icons/instagram.png";
 //   { href: "#habilidades", label: "habilidades" },
 //   { href: "#projetos", label: "projetos" },
 //   { href: "#experiencias", label: "experiências" },
+//   { href: "#contato", label: "contato" },
 // ];
 
 export const Menu = () => {
@@ -40,14 +41,14 @@ export const Menu = () => {
           <img src={Logo} alt="Logo JAO" />
         </a>
 
-        {/* <ul className={`menu__links ${aberto ? "menu__links--aberto" : ""}`}>
-          {LINKS.map((link) => (
+        <ul className={`menu__links ${aberto ? "menu__links--aberto" : ""}`}>
+          {/* {LINKS.map((link) => (
             <li key={link.href}>
               <a href={link.href} onClick={() => setAberto(false)}>
                 {link.label}
               </a>
             </li>
-          ))}
+          ))} */}
           <li className="menu__redes menu__redes--mobile">
             <a target="_blank" rel="noreferrer" href="https://github.com/scjoaoantonio" aria-label="GitHub">
               <img src={GITHUB} alt="" />
@@ -59,7 +60,7 @@ export const Menu = () => {
               <img src={EMAIL} alt="" />
             </a>
           </li>
-        </ul> */}
+        </ul>
 
         <div className="menu__redes menu__redes--desktop">
           <a target="_blank" rel="noreferrer" href="https://www.instagram.com/scjoaoantonio" aria-label="Instagram">
