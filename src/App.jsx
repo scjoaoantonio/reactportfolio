@@ -3,7 +3,7 @@ import "./global.css";
 import { Menu } from "./Components/Menu";
 import { Home } from "./Pages/Home";
 import { Skills } from "./Pages/Skills";
-import { Works } from "./Pages/Works";
+// import { Works } from "./Pages/Works";
 import Timeline from "./Pages/Timeline";
 
 const App = () => {
