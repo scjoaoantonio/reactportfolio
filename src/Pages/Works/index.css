@@ -1,132 +1,111 @@
-/* Estilos para telas com largura maior ou igual a 560px */
-@media (min-width: 560px) {
-  .portfolio .grid {
-    grid-template-columns: repeat(2, 240px);
-    justify-content: center;
-  }
-}
-
-/* Estilos para telas com largura maior ou igual a 880px */
-@media (min-width: 880px) {
-  .portfolio .grid {
-    grid-template-columns: repeat(3, 260px);
-    align-content: center;
-    justify-content: center;
-  }
+.works {
+  padding-top: var(--sp-8);
+  padding-bottom: var(--sp-8);
 }
 
 .portfolio .grid {
   display: grid;
-  gap: 2em;
-  margin-bottom: 2em; /* Aumenta a margem inferior para criar espaço na parte inferior */
+  gap: var(--sp-5);
+  justify-content: center;
 }
 
-.portfolio h2 {
-  font-family: "Rubik", sans-serif;
-  color: rgb(163, 218, 255);
-  margin-bottom: 1em;
-  font-size: 2em;
-  text-align: center;
+@media (min-width: 560px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(2, 260px);
+  }
 }
 
-.works {
-  min-height: auto; /* Altera para altura mínima em vez de altura auto */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 2em; /* Adiciona um espaçamento na parte inferior do .works */
-}
-
-.works h2 {
-  font-family: "Rubik", sans-serif;
-  color: whitesmoke;
-  margin-bottom: 1em;
-  font-size: 50px;
-  text-decoration: underline;
-  text-decoration-color: rgb(130, 205, 255);
-  text-align: center;
+@media (min-width: 880px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 280px);
+  }
 }
 
 .carde {
-  border-radius: 16px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  cursor: pointer;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+  border-radius: var(--raio-md);
+  border: 1px solid var(--border);
   overflow: hidden;
-  background-image: linear-gradient(#333, #333);
-  transition: all 0.5s;
+  position: relative;
+  background: var(--surface);
+  transition: border-color var(--transicao), transform var(--transicao);
+}
+
+.carde:hover {
+  border-color: var(--border-strong);
+  transform: translateY(-3px);
 }
 
 .carde .imge {
   width: 100%;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.8s;
-  z-index: 0;
-  position: relative;
-  opacity: 0.8;
+  height: 170px;
+  background-size: cover;
+  background-position: center;
 }
 
-.carde .contente {
-  display: flex;
-  padding: 10px;
-  height: auto;
-  opacity: 1;
-  transition: all 0.5s;
-  position: relative;
-  box-sizing: border-box;
-  overflow: hidden;
-  transform: translateY(0);
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.carde .titlee {
-  font-family: "Rubik", sans-serif;
-  color: whitesmoke;
-  font-size: 0.8em;
-  text-align: center;
-}
-
-.sr-only {
+.carde__overlay {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+  inset: 0;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(10, 13, 20, 0.72);
+  opacity: 0;
+  transition: opacity var(--transicao);
+}
+
+.carde:hover .carde__overlay {
+  opacity: 1;
+}
+
+.carde__link {
+  font-family: var(--fonte-mono);
+  font-size: 13.5px;
+  color: var(--text);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--raio-sm);
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.carde__link:hover {
+  border-color: var(--accent-1);
+  color: var(--accent-1);
+}
+.carde__link::after {
+  content: "↗";
+  margin-left: 6px;
+}
+.contente {
+  padding: var(--sp-4);
+}
+
+.titlee {
+  font-family: var(--fonte-titulo);
+  color: var(--text);
+  font-size: 15.5px;
+  font-weight: 600;
+}
+
+.subtitlee {
+  font-family: var(--fonte-mono);
+  color: var(--text-weak);
+  font-size: 12px;
+  margin-top: 4px;
 }
 
 #milhas {
   background-image: url("../../img/others/milhas.png");
-  background-size: cover;
-  background-position: center;
 }
 
 #quilombo {
   background-image: url("../../img/others/quilombo.png");
-  background-size: cover;
-  background-position: center;
 }
 
 /* #cavalinho {
   background-image: url("../../img/others/cavalinho.png");
-  background-size: cover;
-  background-position: center;
 } */
 
 #farmacia {
   background-image: url("../../img/others/farmacia.png");
-  background-size: cover;
-  background-position: center;
 }
