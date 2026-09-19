@@ -5,6 +5,7 @@ import { Home } from "./Pages/Home";
 import { Skills } from "./Pages/Skills";
 // import { Works } from "./Pages/Works";
 import Timeline from "./Pages/Timeline";
+import { Contact } from "./Pages/Contact";
 
 const App = () => {
   return (
@@ -18,7 +19,16 @@ const App = () => {
         {/* <Works /> */}
         {/* <hr /> */}
         <Timeline />
-        <footer className="footer"></footer>
+        <Contact />
+        <footer className="footer">
+          <div className="container footer__linha">
+            <span className="footer__copy">© 2026 João Antônio</span>
+            |
+            <a href="#home" className="footer__topo">
+              voltar ao topo ↑
+            </a>
+          </div>
+        </footer>
       </div>
     </>
   );

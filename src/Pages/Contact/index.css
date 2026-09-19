@@ -1,0 +1,31 @@
+.contato {
+  padding-top: var(--sp-8);
+  padding-bottom: var(--sp-8);
+}
+
+.contato__caixa {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--raio-lg);
+  padding: var(--sp-8) var(--sp-6);
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.contato__caixa .secao-titulo {
+  margin-bottom: var(--sp-3);
+}
+
+.contato__texto {
+  color: var(--text-soft);
+  font-size: 15.5px;
+}
+
+.contato__acoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--sp-3);
+  margin-top: var(--sp-6);
+}

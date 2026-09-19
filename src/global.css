@@ -147,6 +147,38 @@ h1, h2, h3 {
   align-items: center;
   margin-bottom: var(--sp-2);
 }
+.footer__linha {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  width: 100%;
+}
+
+.footer__redes {
+  display: flex;
+  gap: var(--sp-5);
+  font-family: var(--fonte-mono);
+  font-size: 13px;
+}
+
+.footer__redes a,
+.footer__topo {
+  color: var(--text-weak);
+  text-decoration: none;
+  transition: color var(--transicao);
+}
+
+.footer__redes a:hover,
+.footer__topo:hover {
+  color: var(--text);
+}
+
+.footer__topo {
+  font-family: var(--fonte-mono);
+  font-size: 13px;
+}
 
 /* ==========================================================================
    Revelação suave ao rolar — reutilizável em qualquer seção
