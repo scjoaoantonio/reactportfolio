@@ -1,30 +1,37 @@
 import React from "react";
-import Foto from "../../img/others/eusite.jpg";
+import Foto from "../../img/others/myphoto.jpg";
 import "./index.css";
 import "../../global.css";
 
 export const Home = () => {
   return (
-    <section className="home">
-      <div className="container1">
-        <img src={Foto} width="300" className="foto" alt="Joao" />
-        <h1 className="site-title">João Antônio</h1>
-        <h1 className="site-subtitle">Estudante de Ciência da Computação</h1>
-      </div>
-      <div className="container2">
-        <h2>Sobre mim</h2>
-        <p className="site-apresentation">
-          Sou <b>João Antônio</b>, faço <b>Ciência da Computação</b> na
-          Universidade Federal de São João del Rei e estudo{" "}
-          <b>Desenvolvimento Web</b> desde 2020.
-          <div className="space">*</div>
-          Estou em busca de um <b> estágio</b> para desenvolver meu
-          conhecimento, adquirir experiência prática e contribuir para o sucesso
-          da empresa.
-          <div className="space">*</div>
-          Estou motivado a <b>aprender</b> qualquer tecnologia ou framework
-          necessários para o trabalho.
-        </p>
+    <section className="home" id="home">
+      <div className="home__conteudo container">
+        <div className="home__texto">
+          <h1 className="home__titulo">
+            Olá, sou <span className="grad">João Antônio</span>
+          </h1>
+          <p className="home__cargo">Engenheiro de Software & Cientista da Computação</p>
+
+          <p className="home__bio">
+            Formado em <b>Ciências da Computação</b> pela <b>Universidade Federal de São João del-Rei</b>, com uma trajetória marcada por experiências que uniram aprendizado técnico e desenvolvimento pessoal. 
+            <br />
+            Hoje atuo como  <b>Engenheiro de Software</b> na <b>SYDLE</b>, trabalhando de forma full stack na plataforma <b>SYDLE ONE</b>. 
+          </p>
+{/* 
+          <div className="home__acoes">
+            <a className="botao botao--primario" href="#projetos">
+              Ver projetos
+            </a>
+            <a className="botao botao--fantasma" href="mailto:joaoasccc@gmail.com">
+              Falar comigo
+            </a>
+          </div> */}
+        </div>
+
+        <div className="home__foto-wrap">
+          <img src={Foto} className="home__foto" alt="Foto de João Antônio" />
+        </div>
       </div>
     </section>
   );
